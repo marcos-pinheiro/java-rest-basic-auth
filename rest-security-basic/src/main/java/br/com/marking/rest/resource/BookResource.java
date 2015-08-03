@@ -7,7 +7,6 @@ import br.com.marking.repository.BookRepository;
 import br.com.marking.repository.BookRepositoryImpl;
 import br.com.marking.entity.Book;
 import br.com.marking.entity.dto.BookDTO;
-import java.net.URISyntaxException;
 import java.util.List;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -42,7 +41,7 @@ public class BookResource {
     
     @GET
     @Path("/{isbn}") @Produces(MediaType.APPLICATION_JSON)
-    public Response getBookByIsbn(@PathParam("isbn") String isbn) throws URISyntaxException {
+    public Response getBookByIsbn(@PathParam("isbn") String isbn) {
 
         return Response.ok(bookRepository.getById(isbn)).build();
     }
