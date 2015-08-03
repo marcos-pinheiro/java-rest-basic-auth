@@ -8,12 +8,12 @@ import br.com.marking.entity.dto.BookDTO;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import org.junit.Test;
-import static br.com.marking.rest.resource.filter.HttpBasicAuthenticator.newAuthenticator;
 import java.math.BigDecimal;
 import java.util.List;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.GenericType;
 import javax.ws.rs.core.Response;
+import static br.com.marking.rest.resource.filter.HttpBasicAuthenticator.newAuthenticator;
 import static org.junit.Assert.*;
 
 /**
