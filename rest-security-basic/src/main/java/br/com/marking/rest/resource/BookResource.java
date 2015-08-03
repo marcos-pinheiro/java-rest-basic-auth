@@ -1,13 +1,5 @@
 /*
- * OBS: Este é somente um exemplo de como criar um web service restful com autenticação em HTTP Basic;
- * Outras questões como design, HATEOAS e validações estão a parte deste exemplo;
  *
- * Leia o arquivo readme
- * OBS: Necessário adicionar usuário no realm do seu servidor...
- * No caso estou utilizando o Glassfish 4.1 e nele para adicionar um usuário base
- * entre no console do servidor e vá em:   Configurations -> server-config -> Security -> Realms -> file;
- * Crie o usuário e se lembre bem das credenciais inputadas para poder colocar o usuario criado no web.xml :)
- * No arquivo sun-web.xml deve ter o vinvulo entre o usuario e o group-name do realm.
  */
 package br.com.marking.rest.resource;
 
