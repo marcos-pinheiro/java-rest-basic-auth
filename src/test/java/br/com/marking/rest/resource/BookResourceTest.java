@@ -42,7 +42,7 @@ public class BookResourceTest {
         client.close();
     }
 
-   @Test
+    @Test
     public void testRegister() {
         
         Client client = ClientBuilder.newClient();
@@ -86,7 +86,7 @@ public class BookResourceTest {
         
     }
 
-    @Test
+   @Test
     public void testDelete() {
         
         Client client = ClientBuilder.newClient();
