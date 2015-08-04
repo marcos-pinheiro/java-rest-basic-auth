@@ -25,7 +25,7 @@ public class BookRepositoryImpl implements BookRepository {
         SOURCE.put("1449370179", Book.newInstance("1449370179", "Java EE 7 Essentials", new BigDecimal("79.90")));
         SOURCE.put("0321125215", Book.newInstance("0321125215", "Domain Driven Design", new BigDecimal("299.90")));
         SOURCE.put("9999999999", Book.newInstance("9999999999", "Livro do titio",       new BigDecimal("9.90")));
-        SOURCE.put("9999999999", Book.newInstance("0192837465", "RESTful Java Patterns and Best Practices", new BigDecimal("9.90")));
+        SOURCE.put("0192837465", Book.newInstance("0192837465", "RESTful Java Patterns and Best Practices", new BigDecimal("99.90")));
     }
     
 

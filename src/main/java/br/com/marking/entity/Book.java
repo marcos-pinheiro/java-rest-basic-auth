@@ -3,6 +3,7 @@
  */
 package br.com.marking.entity;
 
+import com.google.common.base.Objects;
 import java.math.BigDecimal;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -52,5 +53,32 @@ public final class Book {
 
     public String getIsbn() {
         return isbn;
+    }
+
+    
+    @Override
+    public boolean equals(Object obj) {
+        
+        if (obj == null) return false;
+        if (getClass() != obj.getClass()) return false;
+        
+        final Book other = (Book) obj;        
+        return Objects.equal(this.isbn, other.isbn)
+            && Objects.equal(this.description, other.description)
+            && Objects.equal(this.price, other.price);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(this.isbn, this.description, this.price);
+    }
+
+    @Override
+    public String toString() {
+        return Objects.toStringHelper(this)
+                .add("Isbn", this.isbn)
+                .add("Description", this.description)
+                .add("Price", this.price)
+                .toString();
     }
 }

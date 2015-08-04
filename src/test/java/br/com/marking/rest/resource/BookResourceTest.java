@@ -102,7 +102,7 @@ public class BookResourceTest {
         client.close();        
     }
 
-    @Test
+   @Test
     public void testGetAllBooksByFilter() {
         
         Client client = ClientBuilder.newClient();
@@ -114,7 +114,9 @@ public class BookResourceTest {
                 .get(new GenericType<List<Book>>(){});
         
         books.stream().forEach(book -> {
-            assertTrue("Java EE 7 Essentials".equals(book.getDescription()) || "Java Effective".equals(book.getDescription()));
+            assertTrue("Java EE 7 Essentials".equals(book.getDescription()) 
+                    || "Java Effective".equals(book.getDescription())
+                    || "RESTful Java Patterns and Best Practices".equals(book.getDescription()));
         });
     }
 }
